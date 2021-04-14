@@ -1,8 +1,9 @@
 import telebot
 from telebot import types
 from main import *
+import os
 
-bot = telebot.TeleBot('303673800:AAF4Ej2f1zp9c5lepXo-9JWganA-6v7eGnM')
+bot = telebot.TeleBot(open('token', 'r').readline())
 
 
 @bot.message_handler(content_types=['text'])
